@@ -8,7 +8,14 @@ h1{
     text-align: center;
     color: rgb(180, 180, 180);
 }
-img {
-    border: 2px solid rgb(180, 180, 180);
-    border-radius: 5%;
+
+.zoom-out img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out :hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
