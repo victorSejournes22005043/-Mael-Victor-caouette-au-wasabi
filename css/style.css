@@ -1,14 +1,50 @@
 body{
-    background-color: rgb(55, 55, 55);
+    background-image: url("../img/peanutgreen.png");
+    background-repeat: repeat;
     font-family: Verdana;
     margin-left: 50px;
+    margin-right: 50px;
+}
+
+p{
+    color:rgb(29, 145, 0);
 }
 
 h1{
     text-align: center;
-    color: rgb(180, 180, 180);
+    color: rgb(152, 253, 127);
+    text-shadow: 0 0 5px rgb(0, 0, 0)
 }
+
+h2{
+    color:rgb(29, 145, 0);
+    text-align: center;
+}
+
 img {
-    border: 2px solid rgb(180, 180, 180);
-    border-radius: 5%;
+    width: 200px;
+    border: 2px solid rgb(29, 145, 0);
+    border-radius: 10px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+a{
+    font-weight: bold;
+    color: rgb(152, 253, 127);
+    text-shadow: 0 0 5px rgb(0, 0, 0)
+}
+
+.content{
+    border: 5px solid rgb(29, 145, 0);
+    border-radius: 10px;
+    background-color: rgb(172, 248, 121);
+    padding-left: 25px;
+    padding-right: 25px;
 }
