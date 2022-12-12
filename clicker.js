@@ -60,5 +60,5 @@ function actu() {
 	document.getElementById("caouete").innerText = "Caouètes : " + caouete
     document.getElementById("buttonUp").innerText = "Acheter un chinois | " + chineseWorkerCost + " caouètes | " + chineseWorker + " caouètes/s"
     document.getElementById("buttonUpArm").innerText = "Se faire implanter un bras | " + brasCost + " caouètes | " + bras + " bras possédé(s)"
-    document.getElementById("buttonUpRice").innerText = "Nourrir les chinois | " + rizCost + " caouètes | " + riz + " kg de riz (caouètes/sec)"
+    document.getElementById("buttonUpRice").innerText = "Nourrir les chinois | " + rizCost + " caouètes | " + riz + " kg de riz (caouètes/s)"
 }

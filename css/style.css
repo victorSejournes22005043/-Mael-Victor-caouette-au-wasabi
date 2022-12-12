@@ -8,6 +8,7 @@ body{
 
 p{
     color:rgb(29, 145, 0);
+	font-size: 20px;
 }
 
 h1{
@@ -18,11 +19,16 @@ h1{
 
 h2{
     color:rgb(29, 145, 0);
-    text-align: center;
+    text-align: center; 
+}
+
+h3{
+    color:rgb(29, 145, 0);
 }
 
 img {
-    width: 200px;
+    width: 30%;
+	min-width: 200px;
     border: 2px solid rgb(29, 145, 0);
     border-radius: 10px;
 }
@@ -41,21 +47,96 @@ a{
     text-shadow: 0 0 5px rgb(0, 0, 0)
 }
 
+.paragrapheRight img{
+	float: left;
+	margin-right: 10px;
+}
+
+.paragrapheLeft img{
+	float: right;
+	margin-left: 10px;
+}
+
+.clear_float{
+	clear: both;
+	height: 0.5em;
+}
+
 .content{
     border: 5px solid rgb(29, 145, 0);
     border-radius: 10px;
-    background-color: rgb(172, 248, 121);
+    background-color: rgb(188, 255, 157);
     padding-left: 25px;
     padding-right: 25px;
 }
 
-.zoom-out img {
-	-webkit-transform: scale(1.25);
-	transform: scale(1.25);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+#clicker{
+    /* -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease; */
+    transition: all 0.2s ease;
+	width: 200px;
+    border: 0px solid rgb(29, 145, 0);
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1em;
 }
-.zoom-out :hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
+
+#clicker:hover{
+    transform:scale(1.1);
+}
+
+#clicker:active{
+    transform:scale(1);
+}
+
+main{
+    display: flex;
+}
+
+#clicker_section{
+    flex: 1;
+    text-align: center ;
+}
+
+#button_section{
+    flex: 1;
+    text-align: center;
+}
+
+#buttonUpArm{
+    margin-bottom: 30px;
+}
+
+#buttonUp{
+    margin-bottom: 10px;
+}
+
+#caouete{
+    font-size: 1.5em;
+}
+
+button{
+    font-size: 1.2em;
+    color: rgb(29, 145, 0);
+    background-color: transparent;
+    border: 2px solid rgb(29, 145, 0);
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+button:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+button:active{
+    color: rgb(255, 174, 0);
+}
+
+@media screen and (max-width: 480px) {
+    main{
+        flex-direction: column;
+    }
 }
