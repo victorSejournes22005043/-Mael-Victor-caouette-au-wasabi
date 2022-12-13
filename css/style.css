@@ -14,7 +14,7 @@ p{
 h1{
     text-align: center;
     color: rgb(152, 253, 127);
-    text-shadow: 0 0 5px rgb(0, 0, 0)
+    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
 h2{
@@ -133,6 +133,37 @@ button:hover{
 
 button:active{
     color: rgb(255, 174, 0);
+}
+
+form {
+
+    width: 400px;
+    padding: 10px;
+    border: 2px solid rgb(29, 145, 0);
+    border-radius: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid rgb(29, 145, 0);
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+#soumettre{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 480px) {

@@ -6,6 +6,9 @@ var chineseWorker = 0
 var chineseWorkerCost = 85
 var riz = 0
 var rizCost = 250
+var nbClick = 0
+
+const audio = new Audio("audio/obasima.mp3")
 
 
 function init_clicker() {
@@ -19,6 +22,7 @@ function init_clicker() {
 
 function plusCaouete() {
     caouete += bras
+    nbClick += 1
     actu()
 }
 
@@ -34,7 +38,7 @@ function plusCaoueteR() {
 
 function plusBras() {
     if (caouete >= brasCost){
-        bras += 1
+        bras *= 2
         caouete -= brasCost
         brasCost *= 5
         actu()
@@ -61,4 +65,7 @@ function actu() {
     document.getElementById("buttonUp").innerText = "Acheter un chinois | " + chineseWorkerCost + " caouètes | " + chineseWorker + " caouètes/s"
     document.getElementById("buttonUpArm").innerText = "Se faire implanter un bras | " + brasCost + " caouètes | " + bras + " bras possédé(s)"
     document.getElementById("buttonUpRice").innerText = "Nourrir les chinois | " + rizCost + " caouètes | " + riz + " kg de riz (caouètes/s)"
+    if (nbClick >= 1000){
+        audio.play()
+    }
 }
