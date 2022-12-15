@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker</title>
+    <title>Formulaire</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_mobile.css">
-    <script src="js/clicker.js"></script>
 </head>
 <body>
     <h1>Les cacahuetes au wasabi</h1>
@@ -24,21 +23,19 @@
     </nav>
     <!-- contenu de la page -->
     <article class="content">
-    <h2>Clicker</h2>
-    <main>
-        <section id="clicker_section">
-            <p id="caouete"></p>
-            <img id="clicker" class="fit-picture" src="img/caouete.png" alt="De délicieuces cahuetes">
-        </section>
-        <section id="button_section">
-            <h3>Amélioration click :</h3>
-            <button id="buttonUpArm"></button><br><br>
-            <h3>Amélioration caouètes/s :</h3>
-            <button id="buttonUp"></button><br>
-            <button id="buttonUpRice"></button>
-        </section>
-    </main>
-    <script type="text/javascript">init_clicker()</script>
+        <h2 id="avis_site">Donnez nous votre avis sur le site !</h2>
+        <!-- formulaire -->
+        <form accept-charset="utf-8">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom"><br>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="nom"><br>
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail"><br>
+            <label for="avis">Votre avis</label>
+            <textarea id="avis"></textarea><br>
+        </form>
+        <button id="soumettre">Soumettre votre avis</button>
     </article>
 </body>
 </html>

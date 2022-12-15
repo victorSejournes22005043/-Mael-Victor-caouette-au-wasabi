@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="fr">
+<head id="test">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cahuet au wasabi</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+    <script src="js/change_style.js"></script>
 </head>
-
-<body>
+<body id="test">
     <h1>Les cacahuetes au wasabi</h1>
+    <!-- bouton pour changer le thème de la page -->
+    <button id="change_theme">Changer de thème</button>
+    <!-- menu de navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="shopping.html">Shopping</a></li>
-            <li><a href="clicker.html">Clicker</a></li>
+            <li><a class="tabs" href="index.html">Acceuil</a></li>
+            <li><a class="tabs" href="shopping.html">Shopping</a></li>
+            <li><a class="tabs" href="clicker.html">Clicker</a></li>
+            <li><a class="tabs" href="formulaire.html">Formulaire</a></li>
         </ul>
     </nav>
+    <!-- contenu de la page -->
     <article class="content">
         <h2>Bienvenue sur ce site consacré à 100% aux cacahuètes au wasabi et au bonheur procuré suite à la sustentaion
             de ces dernières.</h2>
@@ -32,7 +37,7 @@
             Ceci est peut être un placement de produit
         </p>
         <p class="clear_float"></p>
-        <p class="paragrapheLeft">
+        <p class="paragrapheLeft" class="pend">
             <img class="pictureRight" src="img/wasabi1.jpg" alt="De délicieuces cahuetes au wasabi">
             L'eutrema japonicum (du latin wasabium), quand à lui, est une espèce de plante que l'on trouve en Asie.
             Aussi appelé moutarde japonaise ou raifort japonais.
@@ -42,7 +47,7 @@
         </p>
         <p class="clear_float"></p>
         <p class="paragrapheRight">
-            <img class="pictureLeft" src="img/trend_wasabi_peanut.png" alt="Google Trend wasabi peanut">
+            <img src="img/trend_wasabi_peanut.png" alt="Google Trend wasabi peanut">
             Sur ce graphique détaillé (tiré directement de Google Trend), on observe que le wasabi est bien plus
             tendance que les peanuts
             (cacahuètes en anglais d'après <a
@@ -50,29 +55,11 @@
             les lobbies de la cacahuètes ont décidé de créer un tout nouveau produit : les cacahuètes au wasabi.
             L'ancien temps mélangé à la tendance actuelle.
             Ci-dessous la preuve en image (j'avoue c'est une capture d'écran).<br>
-
         </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <p>
-            On ne prêtera pas attention au Google Trend du wasabi et des cacahuètes..... L'étude de marché était
-            pourtant formelle !
-            <img class="fit-picture" src="img/trend_wasabi_cacahuete.png" alt="Google Trend wasabi cacahuète">
-        </p>
-        <h2 id="avis_site">Donnez nous votre avis sur le site !</h2>
-        <form accept-charset="utf-8">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom"><br>
-            <label for="prenom">Prénom</label>
-            <input type="text" id="nom"><br>
-            <label for="mail">E-mail</label>
-            <input type="email" id="mail"><br>
-            <label for="avis">Votre avis</label>
-            <textarea id="avis"></textarea><br>
-        </form>
-        <button id="soumettre">Soumettre votre avis</button>
     </article>
     <a href="#">Remonter a la surface</a>
     <!--Ancre pour revenir en haut de la page-->
+    <script type="text/javascript">init_style()</script>
 </body>
 
 </html>
