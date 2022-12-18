@@ -1,0 +1,20 @@
+/* style de la page pour les smartphone */
+@media screen and (max-width: 480px) {
+    main{
+        flex-direction: column;
+    }
+
+    /* style pour le formulaire */
+    form {
+        width: 200px;
+        padding: 10px;
+        border: 2px solid rgb(29, 145, 0);
+        border-radius: 10px;
+    }
+
+    input, textarea {
+        width: 100px;
+        box-sizing: border-box;
+        border: 1px solid rgb(29, 145, 0);
+    }
+}
