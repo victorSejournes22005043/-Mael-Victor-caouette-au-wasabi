@@ -1,0 +1,53 @@
+body {
+    background-image: none;
+    background-color: rgb(24, 24, 24);
+}
+
+p{
+    color: rgb(210, 210, 210);
+}
+
+h1{
+    color: rgb(210, 210, 210);
+    text-shadow: 0 0 5px rgb(121, 222, 255);
+}
+
+h2{
+    color: rgb(76, 201, 255);
+}
+
+h3{
+    color: rgb(76, 201, 255);
+}
+
+img{
+    border: 2px solid rgb(92, 244, 255);
+}
+
+ul{
+    border: 5px solid rgb(76, 201, 255);
+    background-color: rgb(96, 96, 96);
+}
+
+button{
+    color: rgb(76, 201, 255);
+    border: 2px solid rgb(76, 201, 255);
+    background-color: rgb(96, 96, 96);
+}
+
+.content{
+    border: 5px solid rgb(76, 201, 255);
+    background-color: rgb(96, 96, 96);
+}
+
+.tabs{
+    color: rgb(76, 201, 255);
+}
+
+form {
+    /*border: 2px solid rgb(76, 201, 255);*/
+}
+
+label, input, textarea{
+    color: rgb(76, 201, 255);
+}

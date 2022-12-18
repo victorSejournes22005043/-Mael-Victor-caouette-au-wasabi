@@ -130,6 +130,7 @@ button{
     text-transform: uppercase;
     cursor: pointer;
     transition: box-shadow 0.3s;
+    background-color: rgb(152, 253, 127);
 }
 
 /* animation boutons */
@@ -143,7 +144,7 @@ button:active{
 form {
     width: 400px;
     padding: 10px;
-    border: 2px solid rgb(29, 145, 0);
+    /*border: 2px solid rgb(29, 145, 0);*/
     border-radius: 10px;
 }
 
